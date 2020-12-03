@@ -4,9 +4,11 @@ import csv
 def parsingCSV(cpfc_f, csv_f):
     reader = csv.DictReader(csv_f, delimiter=';')
     for line in reader:
-        cpfc_f.write(f"{line['Shrt_Desc']}\n     Белки:        {line['Protein_(g)']} г.\n     "
-                     f"Жиры:         {line['Lipid_Tot_(g)']} г.\n     Углеводы:     {line['Carbohydrt_(g)']} г.\n     "
-                     f"Калорийность: {line['Energ_Kcal']} ккал.\n\n")
+        cpfc_f.write(f"{line['Shrt_Desc']}\n"
+                     f"     Белки:        {line['Protein_(g)']} г.\n"
+                     f"     Жиры:         {line['Lipid_Tot_(g)']} г.\n"
+                     f"     Углеводы:     {line['Carbohydrt_(g)']} г.\n"
+                     f"     Калорийность: {line['Energ_Kcal']} ккал.\n\n")
 
 
 def main():
