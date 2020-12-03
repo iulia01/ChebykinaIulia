@@ -9,6 +9,8 @@ def parsingCSV(cpfc_f, csv_f):
                      f"     Жиры:         {line['Lipid_Tot_(g)']} г.\n"
                      f"     Углеводы:     {line['Carbohydrt_(g)']} г.\n"
                      f"     Калорийность: {line['Energ_Kcal']} ккал.\n\n")
+    cpfc_f.close()
+    csv_f.close()
 
 
 def main():
